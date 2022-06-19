@@ -17,6 +17,10 @@ app.get("/*", (req, res) => {
     res.send("Page is missing!")
 })
 
+app.get("/help", (req, res) => {
+    res.send("Help us, please!")
+})
+
 app.listen(port, (err) => {
     if (err) {
         console.log(err)
